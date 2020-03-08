@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>女生节快乐</title>
+
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="author" content="duanliang, duanliang920.com" />
+<style>
+    body{
+        width: 100vh;
+        z-index: -10;
+    }
+</style>
+<script>
+    function loadCSS() {
+        if((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|wOSBrowser|BrowserNG|WebOS)/i))) {
+            document.write('<style>\n' +
+                '        body{\n' +
+                '            top:0;\n' +
+                '            left: 0;\n' +
+                '            width: 100vh;\n' +
+                '            background: black;\n' +
+                '            background-size: cover;\n' +
+                '        }\n' +
+                '    </style>');
+        }
+        else {
+            document.write('<style>\n' +
+                '        body{\n' +
+                '            top:0;\n' +
+                '            left: 0;\n' +
+                '            width: 100%;\n' +
+                '            overflow: hidden;\n' +
+                '            background: url("http://pic1.win4000.com/wallpaper/b/595063e16d3bb.jpg") no-repeat;\n' +
+                '            background-size: cover;\n' +
+                '        }\n' +
+                '    </style>');
+        }
+    }
+    loadCSS();
+</script>
+</head>
+<body>
+   <canvas id="canvas"></canvas>
+
+   <script src="js/utils.js"></script>
+   <script src="js/particles.js"></script>
+   <script src="js/shape.js"></script>
+   <script src="js/index.js"></script>
+
+
+</body>
+</html>
